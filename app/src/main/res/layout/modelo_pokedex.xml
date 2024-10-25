@@ -24,13 +24,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/merriweatherblack"
+                android:gravity="center_horizontal"
+                android:textSize="20sp"
+                android:layout_marginBottom="15dp"
                 android:text="Nome" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/merriweatherblack"
-                android:text="Nome" />
+                android:text="laaasuyuasyfytasf saitfytrdseyrs6yehgfa uytdsayysifdjf syysgdiaiuustiads kusgafiuosajklafs kuyfsa" />
 
         </LinearLayout>
 
