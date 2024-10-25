@@ -7,12 +7,15 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
-import androidx.viewpager2.widget.ViewPager2;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
-    ViewPager2 idViewPagerPokedex;
-    AdapterViewPagePokedex adapterViewPagePokedex;
-
+    RecyclerView recyclerView;
+    List<Pokemos> ListaPokemons;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,9 +28,21 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
 
+        ListaPokemons = new ArrayList<>();
 
+        ListaPokemons.add(
+                new Pokemos("fuecoco","Cara de bobo",)
+        );
 
+        recyclerView = findViewById(R.id.idRecPokedex);
 
+        AdapterViewPagePokedex adapterViewPagePokedex = new AdapterViewPagePokedex(getApplicationContext(),ListaPokemons);
+
+        recyclerView.setLayoutManager(new GridLayoutManager(getApplicationContext(),1));
+
+        recyclerView.hasFixedSize();
+
+        recyclerView.setAdapter(adapterViewPagePokedex);
 
     }
 }

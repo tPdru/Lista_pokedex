@@ -21,6 +21,7 @@ public class AdapterViewPagePokedex extends RecyclerView.Adapter<AdapterViewPage
         this.context = context;
         ListaPokemons = listaPokemons;
     }
+
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
