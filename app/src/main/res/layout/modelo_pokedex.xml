@@ -11,6 +11,7 @@
 
         <ImageView
             android:layout_width="200dp"
+            android:id="@+id/idImgFoto"
             android:layout_height="match_parent"
             android:layout_margin="10dp"
             android:src="#2c2c2c" />
@@ -22,6 +23,7 @@
 
             <TextView
                 android:layout_width="match_parent"
+                android:id="@+id/idTxtNome"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/merriweatherblack"
                 android:gravity="center_horizontal"
@@ -30,6 +32,7 @@
                 android:text="Nome" />
 
             <TextView
+                android:id="@+id/idTxtPokedex"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/merriweatherblack"
