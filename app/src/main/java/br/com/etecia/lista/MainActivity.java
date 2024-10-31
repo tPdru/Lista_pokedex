@@ -31,7 +31,8 @@ public class MainActivity extends AppCompatActivity {
         ListaPokemons = new ArrayList<>();
 
         ListaPokemons.add(
-                new Pokemos("fuecoco","Cara de bobo",)
+                new Pokemos(R.drawable.fuecoco,"Fuecoco", "Cara de bobo")
+
         );
 
         recyclerView = findViewById(R.id.idRecPokedex);
