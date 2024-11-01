@@ -8,23 +8,29 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/merriweatherblack"
-        android:text="Hello World!"
-        android:layout_marginTop="50sp"
-        android:layout_gravity="center_horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#DD3D2E"
+        >
+
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/idBarraPokedex"
+            app:title="Pokedex"
+            app:titleCentered="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+
+    </com.google.android.material.appbar.AppBarLayout>
 
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/idRecPokedex"
-        android:background="#94D0FF"
+        android:background="#CFE6F8"
         />
 
 </LinearLayout>
